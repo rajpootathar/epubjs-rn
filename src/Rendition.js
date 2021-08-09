@@ -3,7 +3,6 @@ import React, { Component } from "react"
 import {
   StyleSheet,
   View,
-  ActivityIndicator,
   Dimensions,
   Platform,
   AppState,
@@ -14,7 +13,6 @@ import { WebView } from 'react-native-webview';
 
 import EventEmitter from 'event-emitter'
 
-import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const URL = require("epubjs/libs/url/url-polyfill.js");
 
@@ -417,11 +415,11 @@ class Rendition extends Component {
         <View style={[styles.loadScreen, {
             backgroundColor: this.props.backgroundColor || "#FFFFFF"
           }]}>
-            <ActivityIndicator
+            {/* <ActivityIndicator
                 color={this.props.color || "black"}
                 size={this.props.size || "large"}
                 style={{ flex: 1 }}
-              />
+              /> */}
         </View>
       </TouchableOpacity>
     );
