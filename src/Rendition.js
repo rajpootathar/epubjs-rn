@@ -14,7 +14,7 @@ import { WebView } from 'react-native-webview';
 
 import EventEmitter from 'event-emitter'
 
-import AsyncStorage from '@react-native-community/async-storage';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const URL = require("epubjs/libs/url/url-polyfill.js");
 
